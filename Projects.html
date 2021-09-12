@@ -1,0 +1,244 @@
+<!--Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <title>Mohammadreza Nakhaei, Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="cv, deep reinforcement learning, robotics" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- Custom Theme files -->
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+    <!-- font-awesome icons -->
+    <link href="css/fontawesome-all.min.css" rel="stylesheet">
+    <!-- //Custom Theme files -->
+    <!-- online-fonts -->
+	<link href="//fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+   <!-- //online-fonts -->
+
+</head>
+
+
+<body>
+    <div class="sidenav text-center">
+		<div class="side_top">
+			<img src="images/MRN.jpg" alt="project image" class="img-fluid navimg">
+			<h1 class="top_hd mt-2"><a href="index.html">Mohammadreza Nakhaei</a></h1>
+			<p class="top_hdp mt-2">Mechatronic Engineer & Researcher<br> AI In Robotics </p>
+        </div>
+		<!-- header -->
+        <header>
+			<div class="nav-top">
+				<nav class="mnu mx-auto">
+                    <label for="drop" class="toggle">Menu</label>
+                    <input type="checkbox" id="drop">
+						<ul class="menu">
+							<li class="mt-sm-3"><a href="index.html" class="scroll">Home</a></li>
+							 <li class="mt-sm-3"><a href="cv.html" class="scroll">CV</a></li>
+							<li class="active"><a href="#project" class="scroll">Projects</a></li>
+                        </ul>
+				</nav>
+			</div>
+		</header>
+        <!-- //header -->
+    </div>
+    <div class="main">
+		<!-- about -->
+
+		<!-- project -->
+       <div class="project" id="project">
+		<h3 class="w3_head mb-4 text-left"> Projects</h3>
+		<h3> <b>Improving UDRL </b></h3>
+		<p>
+		<a href= "https://arxiv.org/abs/1912.02875" target="_blank">Upside-down reinforcement learning</a> was introduced in 2020 by Jurgen Schmidhubber 
+		and the <a href = "https://arxiv.org/abs/1912.02877" target="_blank">first implementation</a> demonstrated that this method can solve RL problems 
+		and even outperform traditional methods in some complex sparse or partially observable environments. DQN and A2C agents 
+		performed better than UDRL in LunarLander, but UDRL agents did solve the Sparse LunarLander. In TakeCover environments, this method had 
+		much better performance and stability compared with mentioned agents. In UDRL, instead of predicting the reward, it is regarded as 
+		an input command. The agent learns to get the specified reward within the specified time steps. <br>
+		We suggested several modifications to improve the exploration and sample efficiency of this algorithm. 
+		<a href="https://arxiv.org/abs/1706.10295" target="_blank"><b>Noisy layer</b></a> 
+		adds parametric noise to the network to encourage exploration. The original paper 
+		demonstrated that this modification improves the performance of DQN and A3C agents in many Atari environments. 
+		Entropy maximization encourages a balance between exploration and exploitation and therefore, results in better performance. 
+		<b>Entropy</b> can be considered as a measure of uncertainty in a system. Adding entropy to the loss function encourage the agents to be less 
+		certain of certain actions, leading to more stochasticity and avoiding suboptimal policies. 
+		In <b>artificial curiosity</b> and <b>intrinsic motivation</b>, reward signal is augmented with intrinsic reward in different ways 
+		including learning process, compression process, information-theoretic measures, prediction error, surprise-based, and visitation count. 
+		Pixels, random features, variational auto-encoders, and inverse dynamic model were used in the prediction error method for intrinsic reward 
+		without considering extrinsic reward in <a href="https://arxiv.org/abs/1808.04355" target="_blank">this paper</a>. 
+		we used dynamic model for intrinsic reward because, despite simplicity, it performed well in many environments. Furthermore, 
+		combining this method with UDRL algorithm requires little change and additional computation. 
+		UDRL algorithm turns RL problems into supervised learning problems and episodes can be viewed as sequential data. 
+		Therefore, utilization of <b>recurrent networks</b> is easily possible with little modification. Recurrent networks can recognize possible 
+		sequential patterns in environments and improve the sample efficiency of UDRL algorithm. LSTM, GRU, and particularly 
+		<a href=https://arxiv.org/abs/1402.3511 target="_blank">ClockWork RNN</a> were considered for this purpose. 
+		In the original algorithm, fixed numbers are used as hyperparameters 
+		for the number of episodes and updates in each iteration. In some environments like CartPole and Pong, 
+		episode length has a correlation with the agent’s performance. In addition, in different environments episode length varies 
+		and the number of updates should be tuned respectively. To deal with these issues, 
+		we propose <b>proportional number of updates</b>.<br>
+		The comparison of our improved version with the basic method is illustrated in the below figure, as an example. 
+		5 random seeds were used in the simulation and the shaded area represents mean<span>&#177;</span>std.
+		<img src="images/ImprovedUDRL.jpg" alt="Project image" class="img-fluid"> 
+
+	</p>
+	<hr>
+	<h3> <b>Deep ClockWork RNN</b></h3>
+	<p>
+		Similar to a simple recurrent neural network, Clockwork RNN consist of input, hidden, and output layers. 
+		The difference between simple RNN and Clockwork RNN is that neurons in the hidden layer are partitioned into g modules 
+		with clock period T<sub>n</sub>ϵ{T<sub>1</sub>,…,T<sub>2</sub>}. These modules are internally fully connected, 
+		but recurrent connections only exist from slower modules to faster ones. At each time step, only the modules that 
+		the remainder of dividing time step by module’s time period become zero are active (t MOD T<sub>i</sub>=0). 
+		Therefore, low-clock-rate can recognize long-term patterns in sequential data and keep information in memory. 
+		Fast-clock-rate modules are able to focus on high frequent information. The next figure illustrates the architecture of this network.
+		<img src="images/CWRNN.jpg" alt="CWRNN image" class="img-fluid">  
+		In deep Clockwork RNN, the output layer is omitted and the hidden layer becomes the input for the next layer. 
+		Therefore, many layers with different numbers of modules, number of neurons, and time periods can be stacked together. 
+		The hidden state of each layer is stored for the next prediction. The initial hidden state for each layer is considered to be zero. 		
+	</p>
+	<hr>
+	<h3> <b>Self-supervised RL</b></h3>
+	<p>
+		<a href="https://arxiv.org/abs/2106.05526" target="_blank">Self-supervised reinforcement learning (SSRL)</a> 
+		is a new algorithm that tries to simplify RL problems by self-supervision and supervised learning methods. 
+		A policy (neural network) is used to map states to actions and a small ranking buffer is used to store trajectories with high returns. 
+		The policy is trained using the data stored in the buffer. The key idea of SSRL is to keep asking the question 
+		“what data are more likely to be sampled by a policy that is better than the current policy. Despite the simplicity, 
+		this algorithm can compete with state-of-art RL algorithms in different environments. Moreover, this algorithm is more stable, 
+		less sensitive to hyperparameters and faster to train. Also, it can be used for both discrete and continuous action space. 
+		The next figure illustrates the performance of this algorithm in several environments. 
+		5 random seeds were used in the simulation and the shaded area represents mean<span>&#177;</span>std.
+		<img src="images/SSRL.jpg" alt="sSRL image" class="img-fluid"> 
+	</p>
+	<hr>
+	<h3> <b>SMC on 6R robot with EtherCAT</b></h3>
+	<p>
+		Sliding mode controller (SMC) is a common non-linear control method known for robustness and stability. 
+		First,the dynamic model of the robot is derived using the Lagrange method. Based on the model and Lyapunov stability theory, 
+		the controller is designed. For resolving the chattering issue, Tanh function is used instead of sign in the correctional term. 
+		This method is computationally expensive and microcontrollers are not suitable for implementation. 
+		<a href="https://www.ethercat.org/default.htm" target="_blank">EtherCAT</a> is an Ethernet-based Fieldbus system developed by Beckhoff.  
+		The goal during the development of EtherCAT was to apply Ethernet for automation applications requiring short data update times. 
+		The computer was considered as the master. Two Arduino with EasyCAT boards were used as a slave, 
+		one for reading the sensors (potentiometer), filtering and transfering states to the master, 
+		the other for controlling the actuators (motors) according to the command received from the master. There was no packet loss and 
+		the controller cycle was 5 ms. The right picture shows a network used for testing the communication between boards and the computer. 
+		The left picture shows the robot.  
+		<img src="images/SMC_6R.jpg" alt="SMC 6R image" class="img-fluid"> 
+	</p>	
+	<hr>
+	<h3> <b>Controlling 6R robot with Leap Motion in ROS</b></h3>
+	<p>
+		<a href="https://www.ros.org/" target="_blank">The Robot Operating System (ROS)</a> is a flexible framework for writing robot software.
+		It is a collection of tools, libraries, and conventions that aim to simplify the task of creating complex and robust robot behavior 
+		across a wide variety of robotic platforms. First, we model the robot in SolidWorks and convert the model to UDRL format. MoveIt package 
+		was used to read the UDRL file and create files necessary for simulation in the MoveIt and Gazebo. 
+		Rosserial package was used for communication between ros master on the computer and the Arduino board used for controlling the robot. 
+		We could control the robot and generate a path online from the computer. The default PID controller in ROS was used. <br>
+		The <a href="https://www.ultraleap.com/" target="_blank">Leap Motion Controller</a> is a small USB peripheral device 
+		that can detect the position and orientation of hand and fingers. Using two monochromatic IR cameras and three infrared LEDs, 
+		the device observes a roughly hemispherical area, to a distance of about 1 meter. The LEDs generate pattern-less IR light 
+		and the cameras generate almost 200 frames per second of reflected data. We used Leap Motion to control the robot by hand and touchless.
+		The center of the palm was considered for controlling the position of the robot. 
+		<img src="images/ROS_6R.jpg" alt="ROS 6R image" class="img-fluid"> 
+	</p>
+	<hr>
+	<h3> <b>Automatic path planning of spraying robot</b></h3>
+	<p>
+		This was an industrial project. They use a SQ 15_06N manipulator for spraying different parts in the factory. 
+		The employer wanted a program capable of generation and simulation of default paths in the robot such as linear, circular, zigzag, 
+		and an algorithm for automatic path generation. At first, we used MATLAB GUI to develop software from scratch. 
+		We modeled the manipulator in SolidWorks and read the STL files and assembled them. We defined some basic paths and commands 
+		in the program so that the user can program the robot offline. For automatic path generation, the algorithm first slices the part into several parallel planes. 
+		For each plane, the outer surface is determined and an offset with specified length is derived. 
+		These offsets are simplified into the points and the path consists of the movement between these points. 
+		The user can export the program and run it on the robot. The next picture shows the software. 
+		<img src="images/PFA_MATLAB.jpg" alt="PFA MATLAB image" class="img-fluid">
+		We generated paths for several simple parts. The next picture shows the generated path for half-cylinder and half sphere as an example.
+		<img src="images/PFA_Path.jpg" alt="PFA Path image" class="img-fluid"> 
+		Unfortunately, the software had several drawbacks and was not practical. It was slow and couldn't detect collision. We used 
+		<a href="https://robodk.com" target="_blank">RoboDK</a> alternatively. The software support many industrial manipulators by default, 
+		but not SQ manipulators. We modeled the manipulator from SolidWorks files and we edit the post processor for exporting 
+		robot programs. The same algorithm was implemented using Python in RoboDK. 
+		<img src="images/RoboDK.jpg" alt="RoboDK image" class="img-fluid"> 
+	</p>
+	<hr>
+	<h3> <b>DLCC of Hyundai HS165</b></h3>
+	<p>
+		Hyundai HS165 is an industrial manipulator used mainly for spot welding. Kinematics, dynamics, and dynamic load-carrying capacity (DLCC) 
+		are investigated in the project. First, we analyzed the software, hardware, and programming of this manipulator. 
+		Direct Kinematic is derived using DH parameters. An analytical solution was suggested for inverse kinematics. 
+		The kinematic model is validated by the simulation software from the company, HRSpace, and the robot. 
+		The path was discretized into points and a robot program is generated. At each point, the robot stopped for seconds so that we could record 
+		the states, position of the manipulator. The Lagrange method was used to derive the equation of motion and the dynamic model. 
+		Open-loop DLCC was calculated for standard and non-standard trajectories, in standard trajectory the manipulator starts with zero velocity 
+		and it accelerates until it reaches the maximum velocity, then then decelerates until it stops. In open-loop DLCC, torques and forces are computed 
+		for a trajectory without considering the controller. Open-loop DLCC is determined 
+		if one of the motors saturate in the smallest given payload.In determining the closed-loop DLCC, the controller is considered, in our case we used 
+		SMC. For standard trajectory, open loop and close loop DLCC were almost the same while for non-standard trajectories they varied a lot. 
+		An inclined circular trajectory is used according to ISO9283 and the calculated DLCC was 163 kg (nominal payload is 165 kg according to catalog).
+		The next pictures show the robot and the controller. 
+		<img src="images/HS165.jpg" alt="HS165 image" class="img-fluid" style="width: 60%;">   
+		The inclined circular path and the torques for the second joint are illustrated in the next picture. 
+		<img src="images/HS165Path.jpg" alt="HS165 Path image" class="img-fluid">
+	</p>
+	<hr>
+	<h3> <b>Kinematic, dynamic, and control analysis of 3UPS/S robot</b></h3>
+	<p>
+		In a parallel robot,
+		the moving platform is connected to the fixed base through several serial chains. 
+		Most of the joints in a parallel robot are not actuated, and many of these passive joints have several degrees of freedom 
+		(e.g., spherical, universal, and planar joints).  In the 3UPS/S mechanism, the moving platform is connected to the base through 
+		three kinematic chains, the prismatic link is connected to the base by a universal joint and is connected to the moving platform by a
+		spherical joint. This link is actuated and can move linearly. The c.g of the moving platform is fixed by a spherical joint. 
+		The inverse kinematics, singular points, and workspace are investigated. The kinematic model is compared with ADAMS for evaluation. 
+		The dynamic model is derived using Kane and Lagrange methods. In the Lagrange method, the kinetic energy related to 
+		the angular motion of the links is discarded. The Kane method resulted in a more accurate model when compared to ADAMS. 
+		PID and computed torque controller were simulated. For the computed torque controller, the dynamic model derived from the Lagrange method 
+		was used. computed torque controller had much better performance than PID controller. The left picture shows the schematic of the robot 
+		and the right one shows the model in ADAMS.
+		<img src="images/3UPSS.jpg" alt="3UPS/S image" class="img-fluid">
+	</p>
+	<hr>
+	<h3> <b>2d Drawing CNC</b></h3>
+	<p>
+		We designed and made a 2d CNC for drawing with different colors. We used RAMP1.4 with Arduino mega, 2 step motors (400 steps/rev), 
+		servo motors for each color, and drv8825 step drivers. I was in charge of electronics and programming, I used a modified version of 
+		Marlin and GRBL to control the machine. We used LightBurn software for creating G-code 
+		and develop a MATLAB app to modify the G-code so that the right tool number and offset are applied. The next picture shows the 
+		first version.
+		<img src="images/2dCNC.jpg" alt="3UPS/S image" class="img-fluid" style="width:60%">
+	</p>
+	<hr>
+	<h3> <b>Controlling robotic arms</b></h3>
+	<p>
+		We designed, made, and control several robotic arms for class projects. I helped the team in the design and electronics of the robots. 
+		We used servo motors and plexiglass in our design. The first robot has 5 degrees of freedom and a two-finger gripper. 
+		The second is a 3R robot with parallel links. At the end effector of this robot, a magnet and a color sensor are used. 
+		This robot was used for separating objects according to their colors.
+		<img src="images/arms.jpg" alt="arms image" class="img-fluid" >
+	</p>	
+	<hr>
+	<h3> <b>Measuring c.g. of baseball bats</b></h3>
+	<p>
+		For the measuring system course, we made a device for measuring the center of mass of objects, especially baseball bats. 
+		We used two loadcells to measure the inserted force. Total mass is the sum of masses measured by loadcells and by considering the 
+		equilibrium condition, the center of mass of the object is calculated. 
+		<img src="images/CG.jpg" alt="C.G image" class="img-fluid" >
+
+	</p>
