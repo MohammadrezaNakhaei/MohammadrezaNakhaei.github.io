@@ -496,7 +496,7 @@ p.main_p {
     font-size: 1.4em;
     line-height: 1.8em;
     letter-spacing: 0.075em;
-    color: #000;
+    color: #777;
     font-weight: 300;
 }
 section.slide-wrapper {
@@ -515,9 +515,16 @@ p.iner {
     font-size: 1.2em;
     line-height: 1.5em;
     letter-spacing: 0.075em;
-    color: #001;
+    color: #000;
+    font-weight: 250;
 }
-
+p.photos {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    color: #000;
+    font-weight: 500;
+    text-align: center;
+}
 /* contact */
 .wedo {
     padding: 5em 12em 0;
