@@ -512,11 +512,11 @@ h4.main_hd {
     line-height: 1.5em;
 }
 p.iner {
-    font-size: 1.5em;
+    font-size: 1.2em;
     line-height: 1.5em;
     letter-spacing: 0.075em;
-    color: #000;
-    font-weight: 400;
+    color: #001;
+    font-weight: 200;
 }
 
 /* contact */
