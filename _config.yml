@@ -6,9 +6,9 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Wenyan Yang"
+title                    : "Mohammadreza Nakhaei"
 description              : " "
-repository               : "uenian33.github.io"
+repository               : "mohammadrezanakhaei.github.io"
 google_scholar_stats_use_cdn : true
 
 # google analytics
@@ -23,29 +23,29 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "Wenyan Yang"
-  avatar           : "images/wenyan_yang.jpg"
+  name             : "Mohammadreza Nakhaei"
+  avatar           : "images/mrn.jpg"
   bio              : ""
-  location         : "Finland"
+  location         : "Espoo, Finland"
   employer         :
   pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?user=0bTF5XUAAAAJ"
-  email            : "wenyany94@gmail.com"
+  googlescholar    : "https://scholar.google.com/citations?hl=en&user=jLUjb6IAAAAJ"
+  email            : "mohammadreza.nakhaei@yahoo.com"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
-  CV               : "https://scholar.google.com/citations?user=0bTF5XUAAAAJ"
+  CV               :  #"https://scholar.google.com/citations?user=0bTF5XUAAAAJ"
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
   facebook         :
   foursquare       :
-  github           : uenian33 # e.g., "github username"
+  github           : Nakhaei Mohammadreza # e.g., "github username"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "wenyan-yang-523703268" # e.g., "linkedin username"
+  linkedin         : "mohammadreza-nakhaei-816284113/" # e.g., "linkedin username"
   dblp             : # e.g., "https://dblp.org/pid/xx/xxxx.html"
   orcid            : # e.g., "https://orcid.org/xxxx"
   pinterest        :
