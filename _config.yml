@@ -17,7 +17,7 @@ google_analytics_id      :  "G-391WJPDDMM" # get google_analytics_id from https:
 # SEO Related
 # google-site-verification=fm7i3Z0NTh17IdVKr8GE2gcPK5tV4MtlAE6pzwqkFrs
 # <meta name="google-site-verification" content="lKr4HkjPyaLT60EFFaX_zTOEunaePov6FJmaMlvNkTw" />
-google_site_verification :  "lKr4HkjPyaLT60EFFaX_zTOEunaePov6FJmaMlvNkTw" # get google_site_verification from https://search.google.com/search-console/about
+# google_site_verification :  "lKr4HkjPyaLT60EFFaX_zTOEunaePov6FJmaMlvNkTw" # get google_site_verification from https://search.google.com/search-console/about
 bing_site_verification   :  # get bing_site_verification from https://www.bing.com/webmasters/about
 baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.baidu.com/login/index?u=/site/index
 
@@ -39,7 +39,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : Nakhaei Mohammadreza # e.g., "github username"
+  github           : MohammadrezaNakhaei # e.g., "github username"
   google_plus      :
   keybase          :
   instagram        :
