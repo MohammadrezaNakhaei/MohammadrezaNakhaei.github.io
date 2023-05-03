@@ -88,9 +88,9 @@ I got my bachelor degree in mechanical engineering at Iran University of Science
 
 # 🎖Skills
 
--Programming: Proficient in Python and past experience MATLAB anc c++
+-Programming: Proficient in Python and past experience with MATLAB and c++
 
--Tools: Proficient in PyTorch, Numpy. Experience with ROS, JAX, LaTeX, Git, Bash
+-Tools: Proficient in PyTorch, Numpy. Experience with ROS, JAX, LaTeX, Git, Bash, Linux
 
 -Software: Experiance with SolidWorks, Msc ADAMS
 <br/><br/>
