@@ -18,7 +18,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 <style>body {text-align: justify}</style>
 
-I am a third-year PhD student at the [Robot Learning Lab](https://rl.aalto.fi/) at Aalto University, supervised by [Dr. Joni Pajarinen](https://people.aalto.fi/joni.pajarinen).  
+I am a third-year PhD student at the [Robot Learning Lab](https://rl.aalto.fi/) at Aalto University, supervised by [Prof. Joni Pajarinen](https://people.aalto.fi/joni.pajarinen).  
 My current research focuses on reinforcement learning and robotics, with a particular emphasis on **offline meta-RL**. In this setting, the goal is to train generalizable policies by leveraging datasets from multiple tasks. I am also interested in **representation learning**, such as developing efficient latent world models and studying disentanglement.
 
 I earned my Master’s degree in Mechatronics Engineering from the University of Tehran, under the supervision of Dr. Askari Moghadam. My research explored supervised methods in reinforcement learning, focusing on improving the stability and performance of reward-conditioned methods. I investigated the use of sequential models (GRU, LSTM, Clockwork RNN, and Transformers) in the behavior function, along with intrinsic rewards to encourage more efficient exploration.
@@ -32,7 +32,7 @@ I obtained my Bachelor’s degree in Mechanical Engineering from the Iran Univer
 - **22-01-2025**: **[New Publication Alert]**: Our latest research on **Latent World Models** has been accepted to ICLR 2025! 🎉  
 - **10-12-2024**: My visa application to attend AAAI 2025 at US was rejected! 
 - **10-12-2024**: **[New Publication Alert]**: Our latest research on **offline meta-RL** has been accepted to AAAI 2025! 🎉  
-- **01-09-2022**: I'm starting a visit research at [computational intelligence (CI)](https://cs.vu.nl/ci/) research group under supversiion of [Prof. Kevin Luck](https://kevin-luck.com/) At Vrije Universiteit Amsterdam.
+- **01-09-2022**: I'm starting a visit research at [Computational Intelligence (CI)](https://cs.vu.nl/ci/) research group under supversiion of [Prof. Kevin Luck](https://kevin-luck.com/) At Vrije Universiteit Amsterdam.
 - **18-07-2024**: **[Workshop Presentation]**: Our latest research on **Quantized Representation in Self Predictive RL** will be presented at [Arlet@ICML2024](https://arlet-workshop.github.io/icml2024/about).
 - **15-07-2024**: I'm attending [L4DC 2024](https://l4dc.web.ox.ac.uk/home) conference at Oxford, UK. 
 - **28-03-2024**: **[New Publication Alert]**: Our latest research on **Adaptation in RL** has been accepted to L4DC 2024! 🎉
