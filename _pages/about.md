@@ -25,6 +25,7 @@ I earned my Master’s degree in Mechatronics Engineering from the University of
 
 I obtained my Bachelor’s degree in Mechanical Engineering from the Iran University of Science and Technology. As a member of the Robotics Research Lab, supervised by Prof. Habibnejad Korayem, I gained hands-on experience with industrial manipulators (particularly the Hyundai HS series), various control methods (optimal, robust, and adaptive), robotics, and basic electronics.
 # 📰 News
+- **30-09-2025**: I'll be giving a lecture on RL course. 
 - **11-06-2025**: **[New Publication Alert]**: My M.Sc. research on **Upside-down RL** has been accepted to the Journal of Information and Intelligence! 🎉  
 - **24-04-2025**: I'm attending [ICLR 2025](https://iclr.cc/Conferences/2025) conference at Singapore, looking forward meeting top-level ML researchers and presenting our work. 
 - **25-02-2025**: [Zhiyuan Li](https://lizhyun.github.io/) will present my paper at AAAI 2025 at Philadelphia, USA.
