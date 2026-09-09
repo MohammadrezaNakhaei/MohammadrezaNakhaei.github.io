@@ -18,13 +18,16 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 <style>body {text-align: justify}</style>
 
-I am a third-year PhD student at the [Robot Learning Lab](https://rl.aalto.fi/) at Aalto University, supervised by [Prof. Joni Pajarinen](https://people.aalto.fi/joni.pajarinen).  
+Final-year PhD student at the Robot Learning Lab, Aalto University, with 5+ years of experience in machine learning and reinforcement learning research. My work focuses on enabling artificial agents to efficiently generalize to new tasks within a few trials. I hold a Master’s degree in Mechatronics Engineering and a Bachelor’s degree in Mechanical Engineering, with a strong background in robotics, control, and data-driven learning systems.
+
+I am a final-year PhD student at the [Robot Learning Lab](https://rl.aalto.fi/) at Aalto University, supervised by [Prof. Joni Pajarinen](https://people.aalto.fi/joni.pajarinen).  
 My current research focuses on reinforcement learning and robotics, with a particular emphasis on **offline meta-RL**. In this setting, the goal is to train generalizable policies by leveraging datasets from multiple tasks. I am also interested in **representation learning**, such as developing efficient latent world models and studying disentanglement.
 
 I earned my Master’s degree in Mechatronics Engineering from the University of Tehran, under the supervision of Dr. Askari Moghadam. My research explored supervised methods in reinforcement learning, focusing on improving the stability and performance of reward-conditioned methods. I investigated the use of sequential models (GRU, LSTM, Clockwork RNN, and Transformers) in the behavior function, along with intrinsic rewards to encourage more efficient exploration.
 
 I obtained my Bachelor’s degree in Mechanical Engineering from the Iran University of Science and Technology. As a member of the Robotics Research Lab, supervised by Prof. Habibnejad Korayem, I gained hands-on experience with industrial manipulators (particularly the Hyundai HS series), various control methods (optimal, robust, and adaptive), robotics, and basic electronics.
 # 📰 News
+- **15-08-2026**: **[New Publication Alert]**: Our latest research on **Offline Meta-RL in Piecewise Stationary Environments** has been accepted to TMLR! 🎉  
 - **30-09-2025**: I'll be giving a lecture on RL course. 
 - **11-06-2025**: **[New Publication Alert]**: My M.Sc. research on **Upside-down RL** has been accepted to the Journal of Information and Intelligence! 🎉  
 - **24-04-2025**: I'm attending [ICLR 2025](https://iclr.cc/Conferences/2025) conference at Singapore, looking forward meeting top-level ML researchers and presenting our work. 
@@ -93,6 +96,17 @@ I obtained my Bachelor’s degree in Mechanical Engineering from the Iran Univer
 </div>
 
 ## Journals
+
+<div class='small-paper-box'>
+  <div class='small-paper-box-image'><div>
+  <img src='images/CAMEL.png' alt="sym" width="100%"></div></div>
+  <div class='small-paper-box-text' markdown="1">
+
+  [Offline Meta-Reinforcement Learning in Piecewise Stationary Environments](https://openreview.net/forum?id=gp1mAySr25) 
+  - **Mohammadreza Nakhaei**, Aidan Scannell, Joni Pajarinen
+  - `Transactions on Machine Learning Research 2025`  [Code](https://github.com/MohammadrezaNakhaei/CAMEL-official)
+</div>
+</div>
 
   <div class='small-paper-box-text' markdown="1">
 
