@@ -27,6 +27,8 @@ I earned my Master’s degree in Mechatronics Engineering from the University of
 
 I obtained my Bachelor’s degree in Mechanical Engineering from the Iran University of Science and Technology. As a member of the Robotics Research Lab, supervised by Prof. Habibnejad Korayem, I gained hands-on experience with industrial manipulators (particularly the Hyundai HS series), various control methods (optimal, robust, and adaptive), robotics, and basic electronics.
 # 📰 News
+- **18-10-2026** I recieved Nokia Scholarship Grant for my project `Learning Adaptive Policies from Data` 
+- **24-09-2026** **[New Publication Alert]**: Our research on **Temporal Consistency for Task Representation Learning** has been accepted to NeurIPS! 🎉
 - **15-08-2026**: **[New Publication Alert]**: Our latest research on **Offline Meta-RL in Piecewise Stationary Environments** has been accepted to TMLR! 🎉  
 - **30-09-2025**: I'll be giving a lecture on RL course. 
 - **11-06-2025**: **[New Publication Alert]**: My M.Sc. research on **Upside-down RL** has been accepted to the Journal of Information and Intelligence! 🎉  
@@ -48,6 +50,17 @@ I obtained my Bachelor’s degree in Mechanical Engineering from the Iran Univer
 # 📝 Publications 
 
 ##  Conferences
+<div class='small-paper-box'>
+  <div class='small-paper-box-image'><div>
+  <img src='images/spc.png' alt="sym" width="100%"></div></div>
+  <div class='small-paper-box-text' markdown="1">
+
+  [Temporal Consistency Improves Generalization in Contextual Offline Meta Reinforcement Learning](https://arxiv.org/abs/2603.02935) 
+  - **Mohammadreza Nakhaei**, Aidan Scannell, Joni Pajarinen
+  - `NeurIPS 2026`  [Code](https://github.com/mohammadrezanakhaei/spc)
+</div>
+</div>
+
 <div class='small-paper-box'>
   <div class='small-paper-box-image'><div>
   <img src='images/ertrl.png' alt="sym" width="100%"></div></div>
